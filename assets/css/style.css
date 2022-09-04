@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+    padding: 0px;
+    margin: 0px;
+    font-family: inherit;
+}
+
+body {
+    --color1: #1E3C72;
+    --color2: #fff;
+    --color3: #000;
+    --color4: #F8CA02;
+    --bg-img: linear-gradient(to right, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    background-image: url("../../assets/img/1.png");
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+body,
+html {
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border: 0px;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    text-align: end;
+    width: 100%;
+    color: var(--color2);
+    border: 0px;
+    font-size: 4rem;
+}
+
+#main {
+    border: .4rem solid var(--color2);
+    border-radius: 50px;
+    width: 100%;
+    max-width: 280px;
+    background-color: #849F94;
+    padding: 1rem;
+}
+
+.calc_header {
+    /* margin-top: 90px; */
+    background-color: var(--color3);
+    border-radius: 2rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.calc_footer>*+* {
+    margin-top: 1rem;
+}
+
+.calc_footer>*:last-child {
+    gap: 1rem;
+}
+
+.btn_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+    font-size: 20px;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn.btn-grow {
+    flex-grow: 1;
+    border-radius: 40px;
+}
+
+.btn:hover {
+    transform: translate(-2px, -3px);
+}
+
+.btn.active {
+    background-color: #ffffff;
+    color: #f69906;
+}
+
+.btn-grey {
+    background-color: var(--color2);
+    color: #000;
+}
+
+.btn-grey:hover {
+    background-color: #ededed;
+}
+
+.btn-dark-grey {
+    background-color: var(--color3);
+}
+
+.btn-dark-grey:hover {
+    background-color: #f69906;
+}
+
+.btn-orange {
+    background-color: #f69906;
+}
+
+.btn-orange:hover {
+    background-color: orange;
+}
